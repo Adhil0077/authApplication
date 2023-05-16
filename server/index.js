@@ -22,6 +22,7 @@ app.use(bodyParser.json({limit:"30mb",extended: true}))
 app.use(bodyParser.urlencoded({limit:"30mb",extended: true}))
 app.use(cors())
 app.use('/asset',express.static(path.join(__dirname,'public/assets')))
+app.use('/asset',express.static(path.join(__dirname,'public/assets')))
 
 // file storage
 
